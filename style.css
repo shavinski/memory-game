@@ -61,7 +61,7 @@ body {
 
 .start h1 {
     text-align: center;
-    margin: 1em;
+    margin: 1rem;
     letter-spacing: 10px;
     color: rgb(73, 196, 249);
     font-size: 4.5em;
@@ -78,7 +78,7 @@ body {
     bottom: 0;
     margin: auto; 
     background-color: royalblue;
-    width: 10vw;
+    width: 200px;
     height: 10vh;
     border-radius: 33px;
     font-family: tetris;
@@ -154,7 +154,7 @@ body {
 .back {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-color: #f3f3f3;
 }
 
@@ -162,7 +162,7 @@ body {
     box-shadow: 0px 5px 7px 0px black;
 }
 
-.game-over {
+/* .game-over {
     display: none;
     align-items: center;
     justify-content: center;
@@ -175,9 +175,8 @@ body {
     margin: auto;
     width: 35vw;
     height: 35vh;
-    border-radius: 10px;
     background-color: white;
-}
+} */
 
 .game-over h1 {
     text-align: center;
@@ -191,3 +190,106 @@ body {
     text-shadow: 1px 6px 2px grey;
 }
 
+@media all and (max-width: 1201px) {
+   
+    body {
+        background-color: yellow;
+    }
+
+    .score-container, .best-container {
+        font-size: 1.5em;
+    }
+
+    .game > div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .front {
+        background-image: url(img/rithm-just-r.png);
+    }
+}
+
+@media all and (max-width: 1000px) {
+    body {
+        background-color: green;
+    }
+
+    .score-container, .best-container {
+        font-size: 1.8em;
+    }
+
+    .game > div {
+        width: 120px;
+        height: 120px;
+    }
+
+    .front {
+        background-image: url(img/rithm-just-r.png);
+    }
+};
+
+@media all and (max-width: 900px) {
+    body {
+        background-color: blue;
+    }
+
+    .score-container, .best-container {
+        font-size: 2em;
+    }
+
+    .game > div {
+        width: 120px;
+        height: 120px;
+    }
+
+    .front {
+        background-image: url(img/rithm-just-r.png);
+    }
+}
+
+@media all and (max-width: 700px) {
+    .start h1 {
+        font-size: 2.8em;
+    }
+   
+    body {
+        background-color: red;
+    }
+
+    .score-container, .best-container {
+        font-size: 2em;
+    }
+
+    .game > div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .front {
+        background-image: url(img/rithm-just-r.png);
+    }
+}
+
+@media all and (max-width: 400px) {
+    .start h1 {
+        font-size: 2.3em;
+    }
+
+    .score-container, .best-container {
+        font-size: 2em;
+    }
+
+    .game > div {
+        width: 68px;
+        height: 68px;
+    }
+
+    .front {
+        background-image: url(img/rithm-just-r.png);
+    }
+
+    body {
+        background-color: purple;
+    }
+}
