@@ -191,11 +191,6 @@ body {
 }
 
 @media all and (max-width: 1201px) {
-   
-    body {
-        background-color: yellow;
-    }
-
     .score-container, .best-container {
         font-size: 1.5em;
     }
@@ -211,10 +206,6 @@ body {
 }
 
 @media all and (max-width: 1000px) {
-    body {
-        background-color: green;
-    }
-
     .score-container, .best-container {
         font-size: 1.8em;
     }
@@ -230,10 +221,6 @@ body {
 };
 
 @media all and (max-width: 900px) {
-    body {
-        background-color: blue;
-    }
-
     .score-container, .best-container {
         font-size: 2em;
     }
@@ -253,10 +240,6 @@ body {
         font-size: 2.8em;
     }
    
-    body {
-        background-color: red;
-    }
-
     .score-container, .best-container {
         font-size: 2em;
     }
@@ -287,9 +270,5 @@ body {
 
     .front {
         background-image: url(img/rithm-just-r.png);
-    }
-
-    body {
-        background-color: purple;
     }
 }
