@@ -119,7 +119,7 @@ function startGame() {
   startButton.style.display = 'none';
   startHeading.style.display = 'none';
   gameHeader.style.display = 'flex';
-  gameBoard.style.display = 'flex';
+  gameBoard.style.display = 'grid';  // CHANGE BACK TO FLEX MAYBE
   score.textContent = points;
 }
 

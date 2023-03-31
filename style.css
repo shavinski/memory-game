@@ -125,9 +125,13 @@ body {
 
 
 .game {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(7, 14vw);
+    grid-template-rows: repeat(4, 10vw);
+    justify-items: center;
 }
 
 .game div {
@@ -141,7 +145,6 @@ body {
 
 .game div:hover {
     cursor: pointer;
-    transform: scale(1.01);
 }
 
 .front {
@@ -149,9 +152,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f3f3f3;
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 .back {
+    transform: rotateY(-180deg);
+    transition: transform .5s;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -178,14 +185,33 @@ body {
     text-shadow: 1px 6px 2px grey;
 }
 
+@media all and (max-width: 1545px) {
+    .game div {
+        display: inline-block;
+        height: 12vh;
+        width: 10vw;
+    };
+}
+
+
 @media all and (max-width: 1201px) {
+    .game-header {
+        height: 10vh;
+    }
+    
     .score-container, .best-container {
-        font-size: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .game {
+        grid-template-columns: repeat(4, 15vw);
+        grid-template-rows: repeat(7, 10vw);
+        justify-content: center;
     }
 
     .game > div {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 85px;
     }
 
     .front {
@@ -195,12 +221,18 @@ body {
 
 @media all and (max-width: 1000px) {
     .score-container, .best-container {
-        font-size: 1.8em;
+        font-size: 1.3em;
+    }
+
+    .game {
+        grid-template-columns: repeat(4, 16vw);
+        grid-template-rows: repeat(7, 12vw);
+        gap: 5px;
     }
 
     .game > div {
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 80px;
     }
 
     .front {
@@ -210,7 +242,13 @@ body {
 
 @media all and (max-width: 900px) {
     .score-container, .best-container {
-        font-size: 2em;
+        font-size: 1em;
+    }
+
+    .game {
+        grid-template-columns: repeat(4, 30vw);
+        grid-template-rows: repeat(7, 20vw);
+        gap: 5px;
     }
 
     .game > div {
@@ -225,16 +263,23 @@ body {
 
 @media all and (max-width: 700px) {
     .start h1 {
-        font-size: 2.8em;
+        font-size: 3em;
+        margin: 10px;
     }
    
     .score-container, .best-container {
-        font-size: 2em;
+        font-size: 1.5em;
+    }
+
+    .game {
+        grid-template-columns: repeat(4, 20vw);
+        grid-template-rows: repeat(7, 20vw);
+        gap: 5px;
     }
 
     .game > div {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
     .front {
@@ -250,6 +295,13 @@ body {
     .score-container, .best-container {
         font-size: 2em;
     }
+
+    .game {
+        grid-template-columns: repeat(4, 20vw);
+        grid-template-rows: repeat(7, 20vw);
+        gap: 5px;
+    }
+
 
     .game > div {
         width: 68px;
