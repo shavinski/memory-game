@@ -141,13 +141,11 @@ function foundSet() {
 // stores best score from playing
 function storeBestScore() {
   // checks to see if current score is less than stores highscore and replaces 
-  if(score < highScore) {
+  if(points < highScore || highScore === undefined) {
     highScore = points;
     bestScore.textContent = highScore;
-  };
+  } 
   
-  highScore = points;
-  bestScore.textContent = highScore;
 }
 
 // once sets found is equal to amount of sets the game will end and button will be given to return to menu, should clear existing cards from gameBoard
