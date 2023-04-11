@@ -123,30 +123,21 @@ body {
     align-items: center;
 }
 
-.game-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 80vw;
-    height: 50vh;
-}
 
 .game {
-    margin: 5em;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(7, 14vw);
+    grid-template-rows: repeat(4, 10vw);
     justify-items: center;
 }
 
 .game div {
     display: inline-block;
-    /* height: 200px;
-    width: 200px; */
+    height: 15vh;
+    width: 10vw;
     margin: 1%;
     border: 1px solid black;
     border-radius: 10px;
@@ -195,11 +186,11 @@ body {
 }
 
 @media all and (max-width: 1545px) {
-    /* .game div {
+    .game div {
         display: inline-block;
         height: 12vh;
         width: 10vw;
-    }; */
+    };
 }
 
 
@@ -212,16 +203,16 @@ body {
         font-size: 1.2em;
     }
 
-    /* .game {
+    .game {
         grid-template-columns: repeat(4, 15vw);
         grid-template-rows: repeat(7, 10vw);
         justify-content: center;
-    } */
+    }
 
-    /* .game > div {
+    .game > div {
         width: 130px;
         height: 85px;
-    } */
+    }
 
     .front {
         background-image: url(img/rithm-just-r.png);
@@ -233,7 +224,7 @@ body {
         font-size: 1.3em;
     }
 
-    /* .game {
+    .game {
         grid-template-columns: repeat(4, 16vw);
         grid-template-rows: repeat(7, 12vw);
         gap: 5px;
@@ -242,7 +233,7 @@ body {
     .game > div {
         width: 110px;
         height: 80px;
-    } */
+    }
 
     .front {
         background-image: url(img/rithm-just-r.png);
@@ -254,7 +245,7 @@ body {
         font-size: 1em;
     }
 
-    /* .game {
+    .game {
         grid-template-columns: repeat(4, 30vw);
         grid-template-rows: repeat(7, 20vw);
         gap: 5px;
@@ -263,7 +254,7 @@ body {
     .game > div {
         width: 120px;
         height: 120px;
-    } */
+    }
 
     .front {
         background-image: url(img/rithm-just-r.png);
@@ -280,7 +271,7 @@ body {
         font-size: 1.5em;
     }
 
-    /* .game {
+    .game {
         grid-template-columns: repeat(4, 20vw);
         grid-template-rows: repeat(7, 20vw);
         gap: 5px;
@@ -289,7 +280,7 @@ body {
     .game > div {
         width: 70px;
         height: 70px;
-    } */
+    }
 
     .front {
         background-image: url(img/rithm-just-r.png);
@@ -305,7 +296,7 @@ body {
         font-size: 2em;
     }
 
-    /* .game {
+    .game {
         grid-template-columns: repeat(4, 20vw);
         grid-template-rows: repeat(7, 20vw);
         gap: 5px;
@@ -315,7 +306,7 @@ body {
     .game > div {
         width: 68px;
         height: 68px;
-    } */
+    }
 
     .front {
         background-image: url(img/rithm-just-r.png);
